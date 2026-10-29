@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Geist;
+  src: url("../assets/fonts/Geist-VariableFont_wght.ttf");
+}
+
+@theme {
+  --font-geist: Geist, "sans-serif";
+  --color-primary: #EEEEEE;
+  --color-gray: #7F7E90;
+  --color-black: #20242F;
+  --color-gold: #F9BE0E;
+  --color-white: #FFFFFF;
+  --color-red: #C43030;
+
+}
+
+@layer base {
+  body {
+    @apply font-geist text-[16px]
+  }
+
+  h1 {
+    @apply text-8xl font-light leading-normal
+  }
+
+  h2 {
+    @apply text-9xl max-md:text-6xl font-light leading-[1.1]
+  }
+
+  h3 {
+    @apply text-8xl font-light leading-[1.1]
+  }
+
+  p {
+    @apply font-light
+  }
+}
+
+@layer components {
+  .layout {
+    max-width: 68.75rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 48rem) {
+    .md\:layout {
+      max-width: 68.75rem;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
