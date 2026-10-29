@@ -18,7 +18,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         rel="preload"
         href="../assets/fonts/Geist-VariableFont_wght.ttf"
         as="font"
-        type="font/woff"
+        type="font/ttf"
         crossOrigin="anonymous" />
       <body className="min-h-screen  bg-primary">
         <Navbar/>
