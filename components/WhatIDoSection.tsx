@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhatIDoSection = () => {
   return (
-    <div className='layout py-12 flex flex-col gap-6 items-center justify-center'>
+    <div id='service' className='layout py-12 flex flex-col gap-6 items-center justify-center'>
       <p>Here is how I can help</p>
       <section className='flex flex-col gap-6 items-center justify-center text-center'>
         <div> 

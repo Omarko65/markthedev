@@ -34,7 +34,7 @@ export const Contact = () => {
   }
 
   return (
-    <div className='border-y py-12 w-full'>
+    <div id='contact' className='border-y py-12 w-full'>
       <div className="layout flex flex-col items-center justify-center gap-6">
         <div className='text-center'>
           <p>Have an idea?</p>

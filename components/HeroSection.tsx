@@ -18,7 +18,7 @@ export const HeroSection = () => {
       </div>
       <div className='w-full border-b'>
         <div className="md:layout flex flex-col md:flex-row  md:divide-x max-md:divide-y font-light">
-          <div className='py-3 md:w-[80%]'>
+          <div id='about' className='py-3 md:w-[80%]'>
             <p className='max-md:px-5 w-[90%] md:w-[70%]'>I bridge the gap between elegant frontend design and powerful backend logic, creating full-stack applications that are as functionally robust as they are visually engaging.</p>
           </div>
           

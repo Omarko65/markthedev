@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import "./index.css";
 import Navbar from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
+import localfont from 'next/font/local'
 
+const myFont = localfont({
+  src: './fonts/Geist-VariableFont_wght.ttf'
+})
 
 export const metadata: Metadata = {
   title: "MarkTheDev",
@@ -13,13 +17,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      className={myFont.className}
     >
-      <link
-        rel="preload"
-        href="../assets/fonts/Geist-VariableFont_wght.ttf"
-        as="font"
-        type="font/ttf"
-        crossOrigin="anonymous" />
       <body className="min-h-screen  bg-primary">
         <Navbar/>
         {children}
